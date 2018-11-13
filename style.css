@@ -1,3 +1,13 @@
+:root {
+    --padding-zone: 50px;
+    --bg-color-1: #445162;
+    --bg-color-2: #FFF;
+    --text-color-1: #FFF;
+    --text-color-2: #333;
+}
+
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -25,7 +35,7 @@ h2 {
     line-height: 36px;
 }
 p {
-    color: #333333;
+    color: var(--text-color-2);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -34,8 +44,8 @@ p {
 header {
     width: 100%;
     min-height: 323px;
-    background-color: #445162;
-    padding: 50px;
+    background-color: var(--bg-color-1);
+    padding: var(--padding-zone);
     box-sizing: border-box;
 }
 
@@ -44,14 +54,14 @@ header {
 }
 
 .header_right {
-    background-color: #fff;
+    background-color: var(--bg-color-2);
     width: 469px;
     height: 214px;
     float: right;
 }
 
 h1 {
-    color:  #ffffff;
+    color: var(--text-color-1);
     font-size: 60px;
     font-weight: 400;
     text-align: left;
@@ -63,7 +73,7 @@ h1 {
 }
 
 .header_left ul li {
-    color: #ffffff;
+    color: var(--text-color-1);
     font-size: 20px;
     font-weight: 400;
     line-height: 36px;
@@ -87,8 +97,8 @@ main {
 .about {
     width: 100%;
     min-height: 325px;
-    background-color: #fff;
-    padding: 50px;
+    background-color: var(--bg-color-2);
+    padding: var(--padding-zone);
     box-sizing: border-box;
 }
 
@@ -103,8 +113,7 @@ main {
 }
 
 .about_right {
-
-    background-color:  #445161;
+    background-color: var(--bg-color-1);
     width: 430px;
     height: 245px;
     float: right;
@@ -113,7 +122,7 @@ main {
 .pluses {
     width: 100%;
     min-height: 435px;
-    padding: 50px;
+    padding: var(--padding-zone);
     background-color: #f5f5f5;
     box-sizing: border-box;
 }
@@ -127,7 +136,7 @@ main {
     list-style: disc;
     display: inline-block;
     width: 568px;
-    color:  #333333;
+    color:  var(--text-color-2);
     font-size: 16px;
     font-weight: 200;
     line-height: 20px;
@@ -138,7 +147,7 @@ main {
 .plus_icon {
     height: 32px;
     width: 32px;
-    background-color: #445161;
+    background-color: var(--bg-color-1);
     float: left;
     margin-right: 9px;
     background-image: url(images/pluses.png);
@@ -150,13 +159,3 @@ main {
     display: table;
 }
 
-/*
-.pluses ul li:before{
-   content: '';
-   display: inline-block;
-   height: 32px;
-   width: 32px;
-    background-color: #445161;
-   background-image: url(images/pluses.png) repeat-y;
-    margin-right: 5px;
-}*/
