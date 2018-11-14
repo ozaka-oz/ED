@@ -6,7 +6,9 @@
     --text-color-2: #333;
 }
 
-
+header, main, footer, article {
+    display: block;
+}
 
 * {
     margin: 0px;
