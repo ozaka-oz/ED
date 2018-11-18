@@ -2,6 +2,7 @@
     --padding-zone: 50px;
     --bg-color-1: #445162;
     --bg-color-2: #FFF;
+    --bg-color-3: #f5f5f5;
     --text-color-1: #FFF;
     --text-color-2: #333;
 }
@@ -125,7 +126,7 @@ main {
     width: 100%;
     min-height: 435px;
     padding: var(--padding-zone);
-    background-color: #f5f5f5;
+    background-color: var(--bg-color-3);
     box-sizing: border-box;
 }
 
@@ -161,3 +162,115 @@ main {
     display: table;
 }
 
+.scrinshots {
+    width: 100%;
+    padding: var(--padding-zone);
+    background-color: var(--bg-color-2);
+    box-sizing: border-box;
+}
+.scrinshots::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.scrinshots h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.scrinshots_item {
+    width: calc(50% - 8px);
+    display: inline-block;
+    float: left;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.scrinshots_img {
+    background-color: var(--bg-color-1);
+    width: 200px;
+    height: 150px;
+    float: left;
+}
+
+.scrinshots_item > h3 {
+    color:  #445161;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.reviews {
+    width: 100%;
+    padding: var(--padding-zone);
+    background-color: var(--bg-color-3);
+    box-sizing: border-box;
+}
+
+.reviews::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.reviews h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reviews_item {
+    width: calc(50% - 8px);
+    display: inline-block;
+    float: left;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.reviews_img {
+    background-color: var(--bg-color-1);
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    margin-right: 20px;
+    float: left;
+}
+
+.reviews_txt {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    background-color: #ececec;
+    padding: 10px;
+    max-width: 440px;
+    float: left;
+    position: relative;
+}
+
+.reviews_txt::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ececec;
+    position: absolute;
+    left: -10px;
+    top: 25px;
+    transform: rotate(45deg);
+}
+
+.reviews_txt_name {
+    color: #989898;
+}
+
+.buy {
+    width: 100%;
+    padding: var(--padding-zone);
+    background-color: var(--bg-color-2);
+    box-sizing: border-box;
+}
+
+.buy h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
