@@ -193,6 +193,7 @@ main {
     width: 200px;
     height: 150px;
     float: left;
+    margin-right: 10px;
 }
 
 .scrinshots_item > h3 {
@@ -239,14 +240,12 @@ main {
 }
 
 .reviews_txt {
-    font-size: 14px;
-    font-style: italic;
-    line-height: 18px;
     background-color: #ececec;
     padding: 10px;
     max-width: 440px;
     float: left;
     position: relative;
+    z-index: 20;
 }
 
 .reviews_txt::before {
@@ -258,6 +257,15 @@ main {
     left: -10px;
     top: 25px;
     transform: rotate(45deg);
+    z-index: 20;
+}
+
+.reviews_txt p {
+    position: relative;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    z-index: 30;
 }
 
 .reviews_txt_name {
