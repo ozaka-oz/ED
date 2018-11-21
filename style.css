@@ -161,6 +161,7 @@ main::after {
     width: 430px;
     height: 245px;
     float: right;
+    position: relative;
 }
 
 .pluses {
