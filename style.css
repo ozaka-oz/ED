@@ -238,7 +238,19 @@ main::after {
 }
 
 .scrinshots_img {
-    background-color: var(--bg-color-1);
+    background: cornflowerblue url(images/3289418-trailer_detroitbecomehuman_20170919_site.jpg);
+    background-size: cover;
+    background-blend-mode: luminosity;
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+.scrinshots_img:hover {
+    background: url(images/3289418-trailer_detroitbecomehuman_20170919_site.jpg);
+    background-size: cover;
+    background-blend-mode: normal;
     width: 200px;
     height: 150px;
     float: left;
