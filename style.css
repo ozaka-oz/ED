@@ -293,6 +293,10 @@ main::after {
 
 .reviews_img {
     background-color: var(--bg-color-1);
+    background-image: url(images/elephant_silhouet.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 75px;
     height: 75px;
     border-radius: 100%;
