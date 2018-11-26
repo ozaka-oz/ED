@@ -20,26 +20,32 @@
 <body>
     <div class="container">
         <header>
-            <div class="header_left">
-                <h1>Product name</h1>
-                <ul>
-                    <li>Put on this page information about your product</li>
-                    <li>A detailed description of your product</li>
-                    <li>Tell us about the advantages and merits</li>
-                    <li>Associate the page with the payment system</li>
-                </ul>
+            <video id="head_video" src="media/detroit.mp4" muted loop autoplay></video>
+            <div class="header_content black_bg">
+                <div class="header_left">
+                    <h1>Detroit: Become Human</h1>
+                    <ul>
+                        <li>Жанры: Интерактивное кино, Неонуар, Триллер</li>
+                        <li>Год выхода: 2018 г.</li>
+                        <li>Платформа: PlayStation 4</li>
+                        <li>Режим: Однопользовательская игра</li>
+                        <li>Разработчик: Quantic Dream</li>
+                        <li>Сценарий: Дэвид Кейдж</li>
+                    </ul>
+                </div>
+                <div class="header_right"><img src="images/detroit_become_human.jpg" alt="detroit_become_human"></div>
             </div>
-            <div class="header_right"></div>
         </header>
         <div class="clearfix"></div>
         <main>
             <div class="about">
                 <div class="about_left">
-                    <h2>About your product</h2>
-                    <p class="about_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
-                    <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+                    <h2>Об игре</h2>
+                    <p class="about_p">Консольная игра, разработанная французской компанией Quantic Dream исключительно для игровой платформы PlayStation 4. Анонс игры состоялся 27 октября 2015 года в рамках выступления Sony на выставке «Paris Games Week 2015». Игра базируется на техническом демо 2012 года «Kara». Сюжет «Become Human» строится вокруг трёх персонажей, у каждого отдельная сюжетная линия, но они, в конечном итоге, соединяются в единую картину. Игра вышла 25 мая 2018 года.</p>
                 </div>
-                <div class="about_right"></div>
+                <div class="about_right">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NZ3NBu6qXZs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="pluses">
                 <h2>Dignity and pluses product</h2>
@@ -195,25 +201,25 @@
             </div>
         </main>
         <footer>
-           <div class="all_contact">
-            <h2>Contacts</h2>
-            <div class="contact">
-                <div class="send_form">
-                    <form name="contact" method="post" action="#">
-                        <input type="text" placeholder="Your name:">
-                        <input type="email" placeholder="Your email:">
-                        <textarea name="comment" cols="40" rows="20" placeholder="Your message:"></textarea>
-                        <input type="submit" value="SEND">
-                    </form>
+            <div class="all_contact">
+                <h2>Contacts</h2>
+                <div class="contact">
+                    <div class="send_form">
+                        <form name="contact" method="post" action="#">
+                            <input type="text" placeholder="Your name:" pattern="^([А-Яа-я]+)$"  required>
+                            <input type="email" placeholder="Your email:" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,4})" required>
+                            <textarea name="comment" cols="40" rows="20" placeholder="Your message:"></textarea>
+                            <input type="submit" value="SEND">
+                        </form>
+                    </div>
+                    <address class="messagers">
+                        <div class="messag_item"><img src="images/skype_icon.png" alt="skype"><a href="skype:SkypeUser?call">here_your_login_skype</a></div>
+                        <div class="messag_item"><img src="images/icq_icon.png" alt="icq"><a href="http://www.icq.com/whitepages/cmd.php?uin=UIN&action=message">279679659</a></div>
+                        <div class="messag_item"><img src="images/email_icon.png" alt="mail"><a href="mailto:psdhtmlcss@mail.ru">psdhtmlcss@mail.ru</a></div>
+                        <div class="messag_item"><img src="images/phone_icon.png" alt="tel"><a href="tel:800045685555">80 00 4568 55 55</a></div>
+                        <div><img src="images/social_buttons.png" alt="social"></div>
+                    </address>
                 </div>
-                <address class="messagers">
-                    <div class="messag_item"><img src="images/skype_icon.png" alt="skype"><a href="skype:SkypeUser?call">here_your_login_skype</a></div>
-                    <div class="messag_item"><img src="images/icq_icon.png" alt="icq"><a href="http://www.icq.com/whitepages/cmd.php?uin=UIN&action=message">279679659</a></div>
-                    <div class="messag_item"><img src="images/email_icon.png" alt="mail"><a href="mailto:psdhtmlcss@mail.ru">psdhtmlcss@mail.ru</a></div>
-                    <div class="messag_item"><img src="images/phone_icon.png" alt="tel"><a href="tel:800045685555">80 00 4568 55 55</a></div>
-                    <div><img src="images/social_buttons.png" alt="social"></div>
-                </address>
-            </div>
             </div>
             <div class="copyr">Copyright © 2014 Product name · PSD HTML CSS</div>
         </footer>
