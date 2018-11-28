@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Raleway:400,500,600,700,800|Roboto');
+
+header, main, footer, article {
+    display: block;
+}
+
+body {
+
+}
+
+.top_menu {
+  position: sticky;
+  top: 0;
+  min-height: 2em;
+  background: lightpink;
+}
+
+.slider_text {
+    position: absolute;
+    top: 0;
+    margin:auto 0px;
+}
+
+.slider_text h1 {
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 52px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+}
+
+.slider_text  {
+    
+}
+
+.slider_text p {
+    
+}
+
