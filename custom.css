@@ -37,8 +37,6 @@ body {
     margin-top: -80px;
 }
 
-.top_menu_content {
-}
 
 .top_menu_content .logo {
     font-family: Raleway;
@@ -49,15 +47,30 @@ body {
     width: 200px;
 }
 
-.top_menu_content .logo img {
-    max-height: 50px;
+.top_menu_content .logo svg {
+    width: 70px;
+    height: 60px;
     display: block;
     float: left;
+    fill: #FFF;
+}
+
+.top_menu_content .logo:hover svg {
+    fill:  #c7b29a;
 }
 
 .top_menu_content .logo p {
     margin: auto 0;
     display: block;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.top_menu_content .logo:hover p {
+    color:  #c7b29a;
 }
 
 .top_menu_content nav {
@@ -67,6 +80,7 @@ body {
 
 .main_menu li {
     display: inline-block;
+    margin-right: 30px;
 }
 
 .main_menu li a {
@@ -75,8 +89,17 @@ body {
     font-size: 14px;
     font-weight: 300;
     text-align: left;
-    text-transform: none;
-    margin-right: 30px;
+    text-transform: none; 
+}
+
+.main_menu li svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+
+.main_menu li svg:hover {
+    fill: #c7b29a;
 }
 
 .main_menu li a:hover {
@@ -159,14 +182,14 @@ body {
     float: left;
 }
 
-.privilege_item > i {
-    font-size: 50px;
-    color: #555555;
-    margin-bottom: 25px;
+.privilege_item > svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
 }
 
-.privilege_item:hover > i {
-    color: #c7b299;
+.privilege_item:hover > svg {
+    fill: #c7b299;
 }
 
 .privilege_item > h3 {
@@ -435,6 +458,17 @@ figcaption .descr_card > p {
 
 
 /*MEDIA*/
+
+@media (max-width: 1281px) {
+    .main_menu {
+    margin-left: -30px;
+}
+    
+    .main_menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+}
 
 @media (max-width: 1000px) {
     
