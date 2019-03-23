@@ -7,8 +7,12 @@
     --text-color-2: #333;
     --text-color-3: #445162;
 }
+
 /*общие стили*/
-header, main, footer, article {
+header,
+main,
+footer,
+article {
     display: block;
 }
 
@@ -33,11 +37,12 @@ body {
 }
 
 h2 {
-    color:  #445161;
+    color: #445161;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
 }
+
 p {
     color: var(--text-color-2);
     font-size: 16px;
@@ -48,12 +53,13 @@ p {
 .black_bg {
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 /*стили блоков*/
 header {
     width: 100%;
     min-height: 720px;
     background-color: var(--bg-color-1);
-/*    padding: var(--padding-zone);*/
+    /*    padding: var(--padding-zone);*/
     box-sizing: border-box;
     position: relative;
 }
@@ -116,16 +122,16 @@ h1 {
     font-size: 20px;
     font-weight: 400;
     line-height: 36px;
-/*    list-style-image: url(images/check_icon.png);*/
+    /*    list-style-image: url(images/check_icon.png);*/
     list-style: none;
 }
 
-.header_left ul li:before{
-   content: '';
-   display: inline-block;
-   height: 19px;
-   width: 25px;
-   background-image: url(images/check_icon.png);
+.header_left ul li:before {
+    content: '';
+    display: inline-block;
+    height: 19px;
+    width: 25px;
+    background-image: url(images/check_icon.png);
     margin-right: 5px;
 }
 
@@ -218,6 +224,7 @@ main::after {
     background-color: var(--bg-color-2);
     box-sizing: border-box;
 }
+
 .scrinshots::after {
     content: '';
     clear: both;
@@ -238,15 +245,31 @@ main::after {
 }
 
 .scrinshots_img {
-    background-color: var(--bg-color-1);
+    background: cornflowerblue url(images/3289418-trailer_detroitbecomehuman_20170919_site.jpg);
+    background-size: cover;
+    /*
+    background-blend-mode: luminosity;
+*/
     width: 200px;
     height: 150px;
     float: left;
     margin-right: 10px;
 }
 
+/*
+.scrinshots_img:hover {
+    background: url(images/3289418-trailer_detroitbecomehuman_20170919_site.jpg);
+    background-size: cover;
+    background-blend-mode: normal;
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+}
+*/
+
 .scrinshots_item > h3 {
-    color:  #445161;
+    color: #445161;
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
@@ -281,6 +304,10 @@ main::after {
 
 .reviews_img {
     background-color: var(--bg-color-1);
+    background-image: url(images/elephant_silhouet.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 75px;
     height: 75px;
     border-radius: 100%;
@@ -364,7 +391,7 @@ main::after {
 }
 
 .buy_item ol li {
-    color:  var(--text-color-1);
+    color: var(--text-color-1);
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -379,7 +406,7 @@ main::after {
 
 .buy_price p {
     display: block;
-    color:  #445162;
+    color: #445162;
     font-size: 40px;
     font-weight: 400;
     line-height: 30px;
@@ -397,7 +424,7 @@ main::after {
 .buy_botton p {
     display: block;
     text-align: center;
-    color:  var(--text-color-3);
+    color: var(--text-color-3);
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
@@ -481,15 +508,17 @@ main::after {
     background-color: var(--bg-color-2);
     height: 40px;
     margin: 0 auto;
-    color:  #445162;
+    color: #445162;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
     text-align: center;
 }
 
-.send_form  input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color:  #445162;
+.send_form input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #445162;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -512,15 +541,32 @@ main::after {
 }
 
 .messagers a {
-    color:  var(--text-color-1);
+    color: var(--text-color-1);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
     font-style: normal;
     text-decoration: none;
-    vertical-align:middle;
-    display:table-cell;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.social i {
+    font-size: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 5px;
+    mix-blend-mode: screen;
+}
+
+.fa-youtube:before {
+    margin: -10px;
 }
 
 .copyr {
@@ -528,7 +574,7 @@ main::after {
     width: 100%;
     text-align: center;
     background: #f5f5f5;
-    color:  #445162;
+    color: #445162;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.3px;
@@ -546,22 +592,29 @@ main::after {
     .header_right img {
         max-width: 100%;
     }
+
     .about_left {
         width: 100%;
         float: none;
     }
+
     .about_right {
         width: 100%;
         height: 480px;
         float: none;
     }
-    .scrinshots_item {
-        width: 100%;
-}
-    .reviews_item {
-        width: 100%;
+
+    .scrinshots_item:nth-child(odd) {
+        margin-left: 10px;
     }
-    
+
+    .scrinshots_img {
+        float: none;
+        width: auto;
+        height: 205px;
+    }
+
+
     .buy_area {
         margin: 0 auto;
         display: flex;
@@ -569,36 +622,118 @@ main::after {
         flex-direction: column;
         width: 90%;
     }
+
     .buy_item {
         width: 500px;
         margin: 20px 5px;
     }
-    
+
     .buy_item ol {
         margin-left: 130px;
         width: 100%;
         box-sizing: border-box;
     }
+
     .buy_botton {
         margin: 15px auto;
     }
-    
+
 }
-    
+
 @media (max-width: 760px) {
 
     .header_right img {
         display: none;
     }
-    
+
     .header_right {
         display: none;
     }
-    
+
     .header_left {
         width: 100%;
     }
+
     .pluses ul li {
         width: 100%;
+    }
+
+    .scrinshots_item {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media (max-width: 830px) {
+    .contact {
+        width: auto;
+    }
+    .send_form {
+        float: none;
+        margin: 0 auto;
+    }
+    .messagers {
+        float: none;
+    }
+    .messag_item {
+    margin: 15px auto 5px auto;
+    vertical-align: middle;
+    display: table;
+}
+    .social {
+        text-align: center;
+    }
+}
+
+@media (max-width: 710px) {
+    .reviews_item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 40px;
+    }
+    .header_left ul li {
+        font-size: 16px;
+    }
+    .scrinshots, .reviews, .buy, .pluses, .about, .all_contact {
+        padding: 20px;
+    }
+    
+    .buy_area {
+        width: 100%;
+    }
+    .buy_item {
+        width: calc(100% - 10px);
+    }
+    .buy_item ol {
+    margin-left: 20px;
+    width: 100%;
+}
+}
+
+@media (max-width: 450px) {
+    .reviews_img {
+        float: none;
+        margin: 0 auto 20px auto;
+    }
+
+    .reviews_txt {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .reviews_txt::before {
+        left: calc(50% - 13px);
+        top: -10px;
+    }
+    .buy_item ol {
+    width: 90%;
+    margin: 0 auto;
+    }
+    .buy_botton {
+        width: 100px;
     }
 }
